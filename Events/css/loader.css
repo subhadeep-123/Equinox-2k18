@@ -1,0 +1,30 @@
+@bg-color: #302F4D;
+@circle-radius: 40px;
+@circle-color: #DE9E36;
+
+body {
+  background-color: @bg-color;
+}
+
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.circles {
+  filter: url('#goo');
+}
+
+.circle {
+  width: @circle-radius;
+  height: @circle-radius;
+  background-color: @circle-color;
+  display: inline-block;
+  border-radius: 50%;
+  margin-top: 0;
+  margin-left: -(@circle-radius / 2 + 2);
+  margin-right: -(@circle-radius / 2 + 2);
+  margin-bottom: 0;
+}
